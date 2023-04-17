@@ -1,0 +1,23 @@
+[2023-04-17 11:02:22,646] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: HelloWorld.print_goodbye manual__2023-04-17T11:02:21.047326+00:00 [queued]>
+[2023-04-17 11:02:22,655] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: HelloWorld.print_goodbye manual__2023-04-17T11:02:21.047326+00:00 [queued]>
+[2023-04-17 11:02:22,655] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-17 11:02:22,655] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2023-04-17 11:02:22,655] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-17 11:02:22,669] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): print_goodbye> on 2023-04-17 11:02:21.047326+00:00
+[2023-04-17 11:02:22,673] {standard_task_runner.py:52} INFO - Started process 3306 to run task
+[2023-04-17 11:02:22,676] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'HelloWorld', 'print_goodbye', 'manual__2023-04-17T11:02:21.047326+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/HelloWorld.py', '--cfg-path', '/tmp/tmpcgf3q73i', '--error-file', '/tmp/tmpw0otk7pm']
+[2023-04-17 11:02:22,677] {standard_task_runner.py:77} INFO - Job 14: Subtask print_goodbye
+[2023-04-17 11:02:22,715] {logging_mixin.py:109} INFO - Running <TaskInstance: HelloWorld.print_goodbye manual__2023-04-17T11:02:21.047326+00:00 [running]> on host 72c2870b5a80
+[2023-04-17 11:02:22,761] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=HelloWorld
+AIRFLOW_CTX_TASK_ID=print_goodbye
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-17T11:02:21.047326+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-17T11:02:21.047326+00:00
+[2023-04-17 11:02:22,761] {logging_mixin.py:109} INFO - goodbye!
+[2023-04-17 11:02:22,762] {python.py:152} INFO - Done. Returned value was: goodbye!
+[2023-04-17 11:02:22,780] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=HelloWorld, task_id=print_goodbye, execution_date=20230417T110221, start_date=20230417T110222, end_date=20230417T110222
+[2023-04-17 11:02:22,808] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-04-17 11:02:22,831] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
